@@ -48,7 +48,7 @@ const DataSourceCard = ({ source, onDelete, onRefresh }) => {
           />
         </div>
         <div>
-          <h3 className="text-sm sm:text-base font-medium">{source.name}</h3>
+          <h3 className="text-sm sm:text-base w-24 text-black font-medium">{source.name}</h3>
           <div className={`inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded text-xs ${statusColors[source.status]}`}>
             <span className="mr-1">{statusIcons[source.status]}</span>
             <span>{source.status.charAt(0).toUpperCase() + source.status.slice(1)}</span>
